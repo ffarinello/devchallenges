@@ -1,0 +1,45 @@
+body {
+  background-color: #d4d4d8;
+  height: 160px;
+  max-width: 1140px;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5c044;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.star::before {
+  content: "⭐️";
+  line-height: 1;
+}
+
+/* article */
+
+article {
+  background-color: #ffffff;
+  width: 220px;
+  padding: 28px 40px;
+  border-radius: 15px;
+}
+
+li {
+  color: #52525a;
+}
+
+h4 {
+  color: #52525a;
+}
+
+p {
+  color: #52525a;
+}
+
+img {
+  height: 24px;
+}
