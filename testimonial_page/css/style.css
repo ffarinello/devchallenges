@@ -4,6 +4,28 @@ body {
   max-width: 1140px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin: 24px;
+}
+
+.reviewers {
+  grid-column: 1/10;
+  grid-row: 1;
+}
+
+.google-testimonial{
+  grid-column: 6/13;
+  grid-row: 2;
+}
+
+.meta-testimonial{
+  grid-column: 1/13;
+  grid-row: 3;
+}
+
 .star {
   display: flex;
   justify-content: center;
