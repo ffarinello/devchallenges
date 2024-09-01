@@ -3,8 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./assets/contact-form-icon.svg" alt="" />
+      <h1>Interested in our business pricing?</h1>
+      <p>
+        Fill out the form to view details and we’ll contact you as soon as
+        possible.
+      </p>
+    </header>
+    <main>
+      <form action="" method="post">
+        <label>Name<input placeholder="Ethan Johnson" type="text" /> </label>
+        <label>
+          Company Email <input placeholder="ethan@johnson.com" type="text" />
+        </label>
+        <label
+          >Company size
+          <select name="employees" id="company-size">
+            <option value="1">50-10 employees</option>
+          </select>
+        </label>
+
+        <label
+          >Subject
+          <select name="subject" id="subject">
+            <option value="2">Building Landing pages</option>
+          </select>
+        </label>
+
+        <label
+          >Message
+          <textarea name="message" id="message">50-10 employees</textarea>
+        </label>
+
+        <input type="submit" value="Contact Sales" />
+      </form>
+    </main>
+  </body>
 </html>

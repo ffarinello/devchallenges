@@ -1,0 +1,42 @@
+:root {
+  --title-size: 4rem;
+  --header-size: 2rem;
+  --body-size: 1rem;
+  --label-size: 0.875rem;
+  --button_text-size: 1.25rem;
+  --input_bg-color: #ffffff;
+  --text-color: #f8fafc;
+  --placeholder-color: #cdd5e0;
+  --input_options-color: #111729;
+  --button_text-color: #4036a9;
+}
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  max-width: 100vw;
+}
+
+body {
+  background: url(../assets/bg-image.svg) no-repeat fixed;
+  background-size: cover;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--title-size);
+}
+
+header img {
+  margin: 20px 0 44px;
+}
+
+header p {
+  margin: 16px 0 72px;
+}
+
+form {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 364px);
+  gap: 24px 18px;
+}
