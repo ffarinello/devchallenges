@@ -23,28 +23,35 @@
     </header>
     <main>
       <form action="" method="post">
-        <label>Name<input placeholder="Ethan Johnson" type="text" /> </label>
-        <label>
-          Company Email <input placeholder="ethan@johnson.com" type="text" />
-        </label>
-        <label
-          >Company size
-          <select name="employees" id="company-size">
-            <option value="1">50-10 employees</option>
-          </select>
-        </label>
+        <fieldset>
+          <label for="name">Name</label>
+          <input placeholder="Ethan Johnson" type="text" id="name"/> </label>
+        </fieldset>
 
-        <label
-          >Subject
+        <fieldset>
+          <label for="email">Company Email</label>
+          <input placeholder="ethan@johnson.com" type="text" id="email"/>
+        </fieldset>
+
+        <fieldset>
+          <label for="employees">Company size</label>
+          <select name="employees" id="company-size">
+            <option value="1">50-100 employees</option>
+            <option value="2">100-150 employees</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="subject">Subject</label>
           <select name="subject" id="subject">
             <option value="2">Building Landing pages</option>
           </select>
-        </label>
+        </fieldset>
 
-        <label
-          >Message
-          <textarea name="message" id="message">50-10 employees</textarea>
-        </label>
+        <fieldset>
+          <label for="message">Message</label>
+          <textarea name="message" id="message">50-100 employees</textarea>
+        </fieldset>
 
         <input type="submit" value="Contact Sales" />
       </form>
