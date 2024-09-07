@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <img src="./assets/contact-form-icon.svg" alt="" />
+      <img src="./assets/contact-form-icon.svg" alt="" class="logo" />
       <h1>Interested in our business pricing?</h1>
       <p>
         Fill out the form to view details and we’ll contact you as soon as
@@ -22,38 +22,46 @@
       </p>
     </header>
     <main>
-      <form action="" method="post">
-        <fieldset>
-          <label for="name">Name</label>
-          <input placeholder="Ethan Johnson" type="text" id="name"/> </label>
+      <form action="./" method="get">
+        <fieldset class="user content">
+          <fieldset class="field user">
+            <label for="name">Name</label>
+            <input placeholder="Ethan Johnson" type="text" id="name" />
+          </fieldset>
+
+          <fieldset class="field mail">
+            <label for="email">Company Email</label>
+            <input placeholder="ethan@johnson.com" type="text" id="email" />
+          </fieldset>
         </fieldset>
 
-        <fieldset>
-          <label for="email">Company Email</label>
-          <input placeholder="ethan@johnson.com" type="text" id="email"/>
+        <fieldset class="company content">
+          <fieldset class="field company-size">
+            <label for="employees">Company size</label>
+            <select name="employees" id="company-size">
+              <option value="1">50-100 employees</option>
+              <option value="2">100-150 employees</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="field subject">
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject">
+              <option value="1">Building Landing pages</option>
+            </select>
+          </fieldset>
         </fieldset>
 
-        <fieldset>
-          <label for="employees">Company size</label>
-          <select name="employees" id="company-size">
-            <option value="1">50-100 employees</option>
-            <option value="2">100-150 employees</option>
-          </select>
-        </fieldset>
+        <fieldset class="contact content">
+          <fieldset class="field message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message">50-100 employees</textarea>
+          </fieldset>
 
-        <fieldset>
-          <label for="subject">Subject</label>
-          <select name="subject" id="subject">
-            <option value="2">Building Landing pages</option>
-          </select>
+          <fieldset>
+            <input type="submit" value="Contact Sales" />
+          </fieldset>
         </fieldset>
-
-        <fieldset>
-          <label for="message">Message</label>
-          <textarea name="message" id="message">50-100 employees</textarea>
-        </fieldset>
-
-        <input type="submit" value="Contact Sales" />
       </form>
     </main>
   </body>
